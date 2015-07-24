@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-Sg-zls">
+                                <rect key="frame" x="204" y="189" width="193" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="DDl-RR-fyq"/>
+                                    <constraint firstAttribute="width" constant="193" id="a4L-ca-boY"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Alert"/>
+                                    <segment title="AlertAction"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhB-Pu-AJY">
+                                <rect key="frame" x="204" y="272" width="193" height="28"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.42352941179999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XNT-X9-VhB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dkh-Sg-zls" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="169" id="3I7-2b-P16"/>
+                            <constraint firstItem="RhB-Pu-AJY" firstAttribute="centerX" secondItem="dkh-Sg-zls" secondAttribute="centerX" id="4rX-s6-JG8"/>
+                            <constraint firstItem="RhB-Pu-AJY" firstAttribute="height" secondItem="dkh-Sg-zls" secondAttribute="height" id="E9p-mf-cfd"/>
+                            <constraint firstItem="RhB-Pu-AJY" firstAttribute="width" secondItem="dkh-Sg-zls" secondAttribute="width" id="L0U-Nj-or1"/>
+                            <constraint firstItem="RhB-Pu-AJY" firstAttribute="top" secondItem="dkh-Sg-zls" secondAttribute="bottom" constant="55" id="OXl-et-O0H"/>
+                            <constraint firstAttribute="centerX" secondItem="dkh-Sg-zls" secondAttribute="centerX" id="q5Q-tG-L3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="seguement" destination="dkh-Sg-zls" id="Dgw-aB-YPu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
