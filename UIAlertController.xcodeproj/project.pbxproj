@@ -14,6 +14,8 @@
 		388C7D031B61E82D00875F70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388C7D021B61E82D00875F70 /* Images.xcassets */; };
 		388C7D061B61E82D00875F70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388C7D041B61E82D00875F70 /* LaunchScreen.xib */; };
 		388C7D121B61E82D00875F70 /* UIAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 388C7D111B61E82D00875F70 /* UIAlertControllerTests.m */; };
+		388C7D1D1B6217E100875F70 /* touchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388C7D1C1B6217E100875F70 /* touchIDViewController.m */; };
+		388C7D211B62197D00875F70 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388C7D201B62197D00875F70 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		388C7D0B1B61E82D00875F70 /* UIAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388C7D101B61E82D00875F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388C7D111B61E82D00875F70 /* UIAlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertControllerTests.m; sourceTree = "<group>"; };
+		388C7D1B1B6217E100875F70 /* touchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchIDViewController.h; sourceTree = "<group>"; };
+		388C7D1C1B6217E100875F70 /* touchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchIDViewController.m; sourceTree = "<group>"; };
+		388C7D201B62197D00875F70 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388C7D211B62197D00875F70 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		388C7CE91B61E82D00875F70 = {
 			isa = PBXGroup;
 			children = (
+				388C7D201B62197D00875F70 /* LocalAuthentication.framework */,
 				388C7CF41B61E82D00875F70 /* UIAlertController */,
 				388C7D0E1B61E82D00875F70 /* UIAlertControllerTests */,
 				388C7CF31B61E82D00875F70 /* Products */,
@@ -85,6 +92,8 @@
 				388C7CFA1B61E82D00875F70 /* AppDelegate.m */,
 				388C7CFC1B61E82D00875F70 /* ViewController.h */,
 				388C7CFD1B61E82D00875F70 /* ViewController.m */,
+				388C7D1B1B6217E100875F70 /* touchIDViewController.h */,
+				388C7D1C1B6217E100875F70 /* touchIDViewController.m */,
 				388C7CFF1B61E82D00875F70 /* Main.storyboard */,
 				388C7D021B61E82D00875F70 /* Images.xcassets */,
 				388C7D041B61E82D00875F70 /* LaunchScreen.xib */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				388C7CFE1B61E82D00875F70 /* ViewController.m in Sources */,
+				388C7D1D1B6217E100875F70 /* touchIDViewController.m in Sources */,
 				388C7CFB1B61E82D00875F70 /* AppDelegate.m in Sources */,
 				388C7CF81B61E82D00875F70 /* main.m in Sources */,
 			);
@@ -418,6 +428,7 @@
 				388C7D171B61E82D00875F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		388C7D181B61E82D00875F70 /* Build configuration list for PBXNativeTarget "UIAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				388C7D1A1B61E82D00875F70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
